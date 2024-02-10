@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Protest+Revolution&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ffc8dd;
+}
+iframe {
+  width: 500px;
+  height: 300px;
+}
+
+#Yesbtn {
+  width: 100px;
+  height: 40px;
+  background-color: green;
+  border: none;
+  color: white;
+  font-size: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn {
+}
+#decline {
+  width: 200px;
+  height: 30px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.firstNo {
+  width: 200px;
+  height: 30px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+}
+#love {
+  display: none;
+  height: 300px;
+}
+#love {
+  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  z-index: -1;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+}
+/*.heart {
+  position: absolute;
+  top: -50px;  
+  left: calc(50% - 25px);  
+  font-size: 50px;
+  color: red;
+  animation: fall 3s ease-in-out forwards;
+  display: none;
+  z-index: 1;
+}*/
+.heart {
+  position: absolute;
+  font-size: 50px;
+  color: red;
+  animation: fall 3s ease-in-out forwards;
+}
+
+.yey {
+  color: red;
+  text-transform: capitalize;
+  font-size: 50px;
+  font-family: "Protest Revolution", sans-serif;
+  letter-spacing: 5px;
+}
+
+#text {
+  font-family: "Protest Revolution", sans-serif;
+  letter-spacing: 5px;
+  margin: 20px;
+  color: #a53860;
+}
